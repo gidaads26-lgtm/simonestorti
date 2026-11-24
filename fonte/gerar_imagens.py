@@ -87,25 +87,35 @@ def og():
     im.save(SAIDA / "og-image.jpg", "JPEG", quality=86, optimize=True)
 
 
+FONTE_S = [
+    "/usr/share/fonts/truetype/google-fonts/Lora-Variable.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
+]
+
+
 def icone(tam, nome):
-    esc = 4
+    """Só a letra S, em marinho, sobre porcelana (lê bem em abas claras e escuras)."""
+    esc = 8
     S = tam * esc
-    im = Image.new("RGB", (S, S), MARINHO)
+    im = Image.new("RGBA", (S, S), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
-    linha = int(S * 0.64)
-    d.rectangle([0, linha, S, S], fill=NOITE)
-    d.rectangle([0, linha - max(esc, S // 90), S, linha + max(esc, S // 90)], fill=CHAMPANHE)
-    f = fonte(FONTES, int(S * 0.46))
+    raio = 0 if tam >= 120 else int(S * 0.22)  # o iPhone arredonda o ícone grande sozinho
+    d.rounded_rectangle([0, 0, S - 1, S - 1], radius=raio, fill=(244, 245, 248, 255))
+    f = fonte(FONTE_S, int(S * 0.86))
     txt = "S"
     bb = d.textbbox((0, 0), txt, font=f)
     tw, th = bb[2] - bb[0], bb[3] - bb[1]
-    d.text(((S - tw) / 2 - bb[0], linha - th - S * 0.1 - bb[1]), txt, font=f, fill=(244, 245, 248))
+    d.text(((S - tw) / 2 - bb[0], (S - th) / 2 - bb[1]), txt, font=f, fill=MARINHO)
     im = im.resize((tam, tam), Image.LANCZOS)
+    if tam >= 120:
+        im = im.convert("RGB")
     im.save(SAIDA / nome, "PNG", optimize=True)
 
 
 if __name__ == "__main__":
-    og()
+    import sys
+    if "--so-icones" not in sys.argv:
+        og()
     icone(180, "apple-touch-icon.png")
     icone(32, "favicon-32.png")
     print("Imagens geradas em", SAIDA)
