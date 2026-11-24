@@ -1,0 +1,275 @@
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<a class="sr" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="cabecalho" id="cabecalho">
+  <div class="wrap">
+    <a class="marca" href="#topo" aria-label="{{NOME}}, voltar ao início">
+      <span class="monograma" aria-hidden="true">S</span>
+      <span class="marca-txt"><strong>{{NOME}}</strong><span class="prof">{{PROFISSAO}}</span></span>
+    </a>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="#metodo">[[folha]]Método</a>
+      <a href="#atendimentos">[[coracao]]Atendimentos</a>
+      <a href="#local">[[pin]]Local</a>
+      <a href="#sobre">[[pessoa]]Sobre</a>
+      <a href="#duvidas">[[balao]]Dúvidas</a>
+      <a class="btn btn-pri" href="{{WA_AGENDAR}}" target="_blank" rel="noopener" data-wa="agendar" data-aviso="whats">Agendar consulta</a>
+    </nav>
+    <button class="hamb" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="painel"><span></span><span></span><span></span></button>
+    <div class="painel" id="painel">
+      <nav aria-label="Menu do celular">
+        <a href="#metodo" style="--i:0">[[folha]]Método</a>
+        <a href="#atendimentos" style="--i:1">[[coracao]]Atendimentos</a>
+        <a href="#local" style="--i:2">[[pin]]Local</a>
+        <a href="#sobre" style="--i:3">[[pessoa]]Sobre</a>
+        <a href="#duvidas" style="--i:4">[[balao]]Dúvidas</a>
+      </nav>
+      <a class="btn btn-ouro" style="--i:5" href="{{WA_AGENDAR}}" target="_blank" rel="noopener" data-wa="agendar" data-aviso="whats">{{ICON_WA}}Agendar pelo WhatsApp</a>
+      <small>Presencial em {{CIDADE}} e online</small>
+    </div>
+  </div>
+  <span class="progresso" aria-hidden="true"></span>
+</header>
+
+<main id="conteudo">
+<section class="hero" id="topo">
+  <div class="wrap hero-grid">
+    <div class="hero-texto">
+      <h1 data-entra style="--i:0">Você já entende o que sente, mas ainda não consegue mudar?</h1>
+      <p class="hero-sub" data-entra style="--i:1">Com psicologia, hipnose clínica e regressão, investigo com você onde começaram as reações que hoje se repetem.</p>
+      <ul class="hero-fatos" data-entra style="--i:2">
+        <li><span class="circ peq" aria-hidden="true">[[relogio]]</span><span><strong>Mais de 30 anos</strong> de experiência como psicóloga</span></li>
+        <li><span class="circ peq" aria-hidden="true">[[premio]]</span><span><strong>1º lugar Ouro</strong> no Melhores do Ano 2025</span></li>
+      </ul>
+      <div class="hero-acoes" data-entra style="--i:3">
+        <a class="btn btn-pri" href="{{WA_AGENDAR}}" target="_blank" rel="noopener" data-wa="agendar" data-aviso="whats">{{ICON_WA}}Quero agendar minha consulta[[seta]]</a>
+      </div>
+    </div>
+    <figure class="hero-foto">
+      <img src="{{IMG_HERO}}" width="722" height="1000" alt="{{NOME}} sorrindo, segurando os óculos vermelhos" fetchpriority="high">
+    </figure>
+  </div>
+</section>
+
+<section class="secao antes" id="antes">
+  <div class="wrap antes-grid">
+    <div>
+      <h2 data-revelar>Talvez alguma destas frases seja sua.</h2>
+      <p class="destaque" data-revelar style="--i:1">Nada disso é frescura. São reações que a sua mente aprendeu em algum momento, muitas vezes para proteger você, e que seguem disparando mesmo quando o perigo já passou.</p>
+      <p class="antes-apoio" data-revelar style="--i:2">Por isso a força de vontade costuma não dar conta. Ela age no pensamento consciente, e essas reações ficam guardadas em camadas mais profundas. É nesse ponto que a hipnose entra, como recurso da psicologia.</p>
+      <a class="btn btn-pri" data-revelar style="--i:3" href="{{WA_AGENDAR}}" target="_blank" rel="noopener" data-wa="agendar" data-aviso="whats">{{ICON_WA}}Quero agendar uma avaliação[[seta]]</a>
+    </div>
+    <div class="frases-box" data-revelar style="--i:1">
+      <p class="frases-titulo">Frases comuns de quem chega até aqui:</p>
+      <ul class="frases">
+        <li>De repente o coração acelera, a respiração encurta e eu acho que vou passar mal.</li>
+        <li>Confiro a porta, o fogão, o celular, e mesmo assim a dúvida volta.</li>
+        <li>Durmo poucas horas e acordo sem energia nenhuma.</li>
+        <li>Prometo que é a última vez, e nunca é.</li>
+        <li>Dou conta de tudo no trabalho, mas chego em casa sem forças para falar com ninguém.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="secao metodo" id="metodo">
+  <div class="wrap">
+    <div class="cab-secao centro">
+      <h2 data-revelar>Como eu trabalho</h2>
+      <p data-revelar style="--i:1">Psicologia e hipnose no mesmo processo. A conversa ajuda a entender o que acontece, e a hipnose e a regressão alcançam o que a conversa sozinha não alcança.</p>
+    </div>
+    <div class="cartoes carrossel" data-carrossel>
+      <article class="cartao" data-revelar style="--i:0">
+        <span class="circ" aria-hidden="true">[[balao]]</span>
+        <h3>Escuta clínica</h3><span class="tecnica">Psicologia</span>
+        <p>Antes de qualquer técnica, escuto a sua história, o que você sente e o que já tentou. É dessa conversa que sai o plano de cada pessoa.</p>
+      </article>
+      <article class="cartao tom-azul" data-revelar style="--i:1">
+        <span class="circ" aria-hidden="true">[[memoria]]</span>
+        <h3>Memória revisitada</h3><span class="tecnica">Hipnose clínica e regressão</span>
+        <p>Em estado de foco, revisitamos com cuidado as memórias ligadas ao que você sente hoje, para olhar para elas com os recursos que você tem agora. Você fica consciente o tempo todo.</p>
+      </article>
+      <article class="cartao tom-ouro" data-revelar style="--i:2">
+        <span class="circ" aria-hidden="true">[[broto]]</span>
+        <h3>Novas respostas</h3><span class="tecnica">Hipnose e psicoterapia</span>
+        <p>O que muda na sessão precisa aparecer fora dela. Com sugestões em hipnose e combinados entre os encontros, as novas reações ganham espaço no trabalho, em casa e na hora de dormir.</p>
+      </article>
+    </div>
+    <div class="pontos" data-pontos role="group" aria-label="Escolher cartão"></div>
+  </div>
+</section>
+
+<section class="objetivos" aria-labelledby="obj-t">
+  <div class="wrap">
+    <h2 id="obj-t" data-revelar>O que buscamos ao longo do processo</h2>
+    <ul class="obj-lista">
+      <li data-revelar style="--i:0"><span class="circ peq" aria-hidden="true">[[ondas]]</span>Atravessar as crises de ansiedade e pânico com mais recursos</li>
+      <li data-revelar style="--i:1"><span class="circ peq" aria-hidden="true">[[lua]]</span>Entender onde nasceram as reações que se repetem</li>
+      <li data-revelar style="--i:2"><span class="circ peq" aria-hidden="true">[[ciclo]]</span>Dormir melhor e recuperar a energia do dia</li>
+      <li data-revelar style="--i:3"><span class="circ peq" aria-hidden="true">[[sol]]</span>Mudar hábitos que pesam no corpo e na rotina</li>
+    </ul>
+  </div>
+</section>
+
+<section class="secao atend" id="atendimentos">
+  <div class="wrap">
+    <div class="cab-secao centro">
+      <h2 data-revelar>Temas que mais atendo</h2>
+    </div>
+    <div class="cartoes carrossel" data-carrossel>
+      <article class="cartao tom-ouro" data-revelar style="--i:0">
+        <span class="circ" aria-hidden="true">[[pulso]]</span>
+        <h3>Ansiedade, pânico e TOC</h3><span class="tecnica">Quando o alarme não desliga</span>
+        <p>O corpo entra em alerta sem aviso, a cabeça antecipa o pior e as checagens tomam cada vez mais tempo do seu dia.</p>
+      </article>
+      <article class="cartao" data-revelar style="--i:1">
+        <span class="circ" aria-hidden="true">[[lua]]</span>
+        <h3>Depressão, insônia e esgotamento</h3><span class="tecnica">Quando o cansaço não passa</span>
+        <p>O descanso não recupera, a noite vira hora de pensar e o que antes dava prazer perdeu a graça.</p>
+      </article>
+      <article class="cartao tom-azul" data-revelar style="--i:2">
+        <span class="circ" aria-hidden="true">[[corpo]]</span>
+        <h3>Hábitos e corpo</h3><span class="tecnica">Quando cabeça e corpo não combinam</span>
+        <p>Vícios, compulsão e a relação com a comida e o peso, dores que persistem e dificuldades na vida sexual.</p>
+      </article>
+    </div>
+    <div class="pontos" data-pontos role="group" aria-label="Escolher cartão"></div>
+    <p class="atend-nota" data-revelar>Seu tema não está aqui? Conte pelo WhatsApp o que você está vivendo. Na avaliação, vemos se a hipnoterapia é indicada para o seu caso.</p>
+  </div>
+</section>
+
+<section class="secao funciona" id="como-funciona">
+  <div class="wrap">
+    <div class="cab-secao centro">
+      <h2 data-revelar>Como funciona, da avaliação até a alta</h2>
+    </div>
+    <ol class="passos" data-passos>
+      <li class="passo" data-revelar style="--i:0"><span class="num">1</span><h3>Consulta de avaliação</h3><p>Você conta o que está vivendo e o que gostaria de mudar. Eu explico como a hipnose funciona e respondo às suas dúvidas.</p>{{NOTA_PRIMEIRA}}</li>
+      <li class="passo" data-revelar style="--i:1"><span class="num">2</span><h3>Plano terapêutico</h3><p>Montamos um plano para o seu caso: quando a hipnose e a regressão entram, a frequência das sessões e o que observar entre elas.</p></li>
+      <li class="passo" data-revelar style="--i:2"><span class="num">3</span><h3>Processo terapêutico</h3><p>Psicoterapia e hipnose se alternam conforme o momento. Você fica consciente o tempo todo e pode interromper quando quiser.</p></li>
+      <li class="passo" data-revelar style="--i:3"><span class="num">4</span><h3>Acompanhamento</h3><p>De tempos em tempos, revisamos o que mudou no seu dia a dia e ajustamos o plano até a alta.</p></li>
+    </ol>
+    <div class="funciona-cta" data-revelar>
+      <a class="btn btn-pri" href="{{WA_AGENDAR}}" target="_blank" rel="noopener" data-wa="agendar" data-aviso="whats">{{ICON_WA}}Quero minha consulta de avaliação[[seta]]</a>
+    </div>
+  </div>
+</section>
+
+<section class="secao local" id="local">
+  <div class="wrap">
+    <div class="cab-secao">
+      <h2 data-revelar>Atendimento em <span class="nq">{{CIDADE}}</span> e online</h2>
+      <p data-revelar style="--i:1">O consultório fica no Jardim dos Estados, num espaço reservado para você falar com calma. Para quem mora em outra cidade, ou prefere ficar em casa, todo o processo pode acontecer online.</p>
+    </div>
+    <div class="local-grid">
+      <figure class="local-foto" data-revelar>
+        <img src="{{IMG_CONSULTORIO}}" width="1000" height="750" alt="{{NOME}} sentada ao lado da poltrona de atendimento no consultório" loading="lazy">
+      </figure>
+      <div class="local-info">
+        <div class="bloco bloco-claro" data-revelar style="--i:1">
+          <span class="circ" aria-hidden="true">[[pin]]</span>
+          <div>
+            <h3>Consultório</h3>
+            <address>{{ENDERECO_LINHA1}}<br>{{ENDERECO_LINHA2}}<br>CEP {{CEP}}</address>
+            <a class="link-seta" href="{{MAPA}}" target="_blank" rel="noopener">Ver no mapa[[seta]]</a>
+          </div>
+        </div>
+        <div class="bloco bloco-linha" data-revelar style="--i:2">
+          <span class="circ" aria-hidden="true">[[tela]]</span>
+          <div>
+            <h3>Online, por videochamada</h3>
+            <p>As sessões, inclusive de hipnose, também acontecem online. Para isso, você precisa de:</p>
+            <ul>
+              <li>um lugar reservado, sem interrupções</li>
+              <li>internet estável</li>
+              <li>fones de ouvido</li>
+            </ul>
+          </div>
+        </div>
+        <a class="btn btn-pri local-cta" data-revelar style="--i:3" href="{{WA_AGENDAR}}" target="_blank" rel="noopener" data-wa="agendar" data-aviso="whats">{{ICON_WA}}Agendar consulta[[seta]]</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{DEPOIMENTOS}}
+
+<section class="secao sobre" id="sobre">
+  <div class="wrap sobre-grid">
+    <figure class="sobre-foto" data-revelar>
+      <img src="{{IMG_SOBRE}}" width="760" height="760" alt="Retrato de {{NOME}} com blusa preta" loading="lazy">
+    </figure>
+    <div class="sobre-texto">
+      <h2 data-revelar>Sou {{NOME}}</h2>
+      <p data-revelar style="--i:1">Sou psicóloga há mais de 30 anos. Na clínica, uno a psicoterapia à hipnose clínica e à regressão, porque muita gente chega ao consultório já sabendo o que sente e, mesmo assim, presa às mesmas reações.</p>
+      <p data-revelar style="--i:2">Também trabalho com desenvolvimento humano e organizacional, levando o cuidado com a saúde emocional para equipes e empresas.</p>
+      <p data-revelar style="--i:3">Atendo no Jardim dos Estados, em {{CIDADE}}, e online para quem está em outras cidades.</p>
+      <div class="selo" data-revelar style="--i:4">
+        <span class="circ peq" aria-hidden="true">[[premio]]</span>
+        <p><strong>Prêmio Melhores do Ano 2025:</strong> 1º lugar Ouro na categoria Hipnose Clínica e Psicologia.</p>
+      </div>
+      {{CRP_SOBRE}}
+      <div class="sobre-acoes" data-revelar>
+        <a class="btn btn-pri" href="{{WA_AGENDAR}}" target="_blank" rel="noopener" data-wa="agendar" data-aviso="whats">{{ICON_WA}}Agendar minha consulta[[seta]]</a>
+        <a class="btn btn-linha" href="{{INSTAGRAM}}" target="_blank" rel="noopener" data-aviso="insta">{{ICON_IG}}Siga no Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao duvidas" id="duvidas">
+  <div class="wrap faq-grid">
+    <div class="cab-secao" style="margin-bottom:0">
+      <h2 data-revelar>Dúvidas frequentes</h2>
+      <p data-revelar style="--i:1">O que mais me perguntam antes da primeira consulta, sobre hipnose, regressão e o atendimento.</p>
+    </div>
+    <div class="faq" data-revelar>
+      <details><summary>Vou perder o controle durante a hipnose?<span class="mais" aria-hidden="true"></span></summary><div class="resposta"><p>Não. Na hipnose clínica você fica consciente, ouve tudo, pode falar e pode sair do estado de foco quando quiser. Ninguém faz você agir contra a sua vontade. É bem diferente da hipnose de palco que aparece na TV.</p></div></details>
+      <details><summary>Como funciona a regressão? Vou reviver algo ruim?<span class="mais" aria-hidden="true"></span></summary><div class="resposta"><p>Em estado de foco, você revisita memórias ligadas ao que sente hoje. Eu conduzo no seu ritmo, e o objetivo é olhar para essas lembranças com os recursos que você tem agora. Se algo ficar intenso, paramos ou mudamos o caminho.</p></div></details>
+      <details><summary>A hipnose é reconhecida pela psicologia?<span class="mais" aria-hidden="true"></span></summary><div class="resposta"><p>Sim. O Conselho Federal de Psicologia reconhece a hipnose como recurso auxiliar do trabalho do psicólogo (Resolução CFP nº 013/2000). Aqui ela entra dentro da psicoterapia, depois da avaliação e com um plano.</p></div></details>
+      <details><summary>Posso fazer todo o processo online?<span class="mais" aria-hidden="true"></span></summary><div class="resposta"><p>Sim. A avaliação, a psicoterapia e as sessões de hipnose acontecem por videochamada. Você só precisa de um lugar reservado, sem interrupções, internet estável e fones de ouvido.</p></div></details>
+      <details><summary>E se o meu caso não estiver entre os temas do site?<span class="mais" aria-hidden="true"></span></summary><div class="resposta"><p>Conte pelo WhatsApp o que você está vivendo. Na avaliação, vemos se a hipnoterapia é indicada. Se outro tipo de acompanhamento fizer mais sentido para você, eu digo com clareza e indico o caminho.</p></div></details>
+      <details><summary>Quantas sessões vou precisar e quando vou perceber mudanças?<span class="mais" aria-hidden="true"></span></summary><div class="resposta"><p>Depende do tema, da sua história e de como você responde ao processo, então não existe número fixo nem prazo garantido. Depois da avaliação, você recebe uma proposta de plano, e revisamos o andamento em conjunto.</p><p>A hipnoterapia é complementar e não substitui o acompanhamento médico ou psiquiátrico. Se você toma medicação, não interrompa sem orientação de quem prescreveu.</p></div></details>
+      <div class="caixa-duvida">
+        <h3>Ficou alguma pergunta sem resposta?</h3>
+        <p>Mande sua dúvida pelo WhatsApp e eu respondo pessoalmente.</p>
+        <a class="btn btn-linha" href="{{WA_DUVIDA}}" target="_blank" rel="noopener" data-wa="duvida" data-aviso="whats">{{ICON_WA}}Perguntar pelo WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="agendar">
+  <div class="wrap">
+    <h2 data-revelar>Você não precisa esperar a próxima crise<br class="so-desk"> <span class="sob">para pedir ajuda.</span></h2>
+    <p data-revelar style="--i:1">Basta uma mensagem pelo WhatsApp para marcar a sua consulta de avaliação. Nela, você conta o que está vivendo e entende como a hipnose e a regressão podem entrar no seu caso.</p>
+    <div class="final-acoes" data-revelar style="--i:2">
+      <a class="btn btn-ouro" href="{{WA_AGENDAR}}" target="_blank" rel="noopener" data-wa="agendar" data-aviso="whats">{{ICON_WA}}Quero agendar minha consulta[[seta]]</a>
+      <a class="icone-btn" href="{{INSTAGRAM}}" target="_blank" rel="noopener" aria-label="Instagram de {{NOME}}" data-aviso="insta">{{ICON_IG}}</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <strong class="rod-nome">{{NOME}}</strong>
+    <p class="rod-prof">{{PROFISSAO}}{{CRP_RODAPE}}</p>
+    <a class="rod-cta" href="{{WA_AGENDAR}}" target="_blank" rel="noopener" data-wa="agendar" data-aviso="whats">Agende sua consulta de avaliação</a>
+    <p class="rod-end">{{ENDERECO_LINHA1}}, {{ENDERECO_LINHA2}}, CEP {{CEP}}. Presencial e online.</p>
+    <div class="redes">
+      <a href="{{INSTAGRAM}}" target="_blank" rel="noopener" aria-label="Instagram de {{NOME}}" data-aviso="insta">{{ICON_IG}}</a>
+      <a href="{{WA_AGENDAR}}" target="_blank" rel="noopener" data-wa="agendar" data-aviso="whats" aria-label="WhatsApp de {{NOME}}">{{ICON_WA}}</a>
+      <a href="{{GOOGLE_NEGOCIO}}" target="_blank" rel="noopener" aria-label="Perfil de {{NOME}} no Google">[[google]]</a>
+    </div>
+    <div class="rod-linha" aria-hidden="true"></div>
+    <p class="rod-base">© <span data-ano>2026</span> {{NOME}}. Todos os direitos reservados. <a href="#topo">Voltar ao topo</a></p>
+  </div>
+</footer>
+
+<div class="barra" id="barra">
+  <a class="btn btn-pri" href="{{WA_AGENDAR}}" target="_blank" rel="noopener" data-wa="agendar" data-aviso="whats" tabindex="-1">{{ICON_WA}}Quero agendar minha consulta</a>
+</div>
+<div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
