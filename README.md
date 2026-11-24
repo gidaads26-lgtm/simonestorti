@@ -26,7 +26,7 @@ python3 montar_template.py   # só se mexeu nas partes do template
 python3 build.py
 ```
 
-4. Suba o conteúdo de `site/` para a hospedagem.
+4. Suba o conteúdo de `site/` para a hospedagem. Na Vercel, o `vercel.json` da raiz já manda publicar a pasta `site/`, e cada push na branch `main` publica de novo.
 
 ## Pendências
 
