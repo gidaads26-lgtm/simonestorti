@@ -30,7 +30,7 @@ WHATSAPP = "556799252306"  # DDI + DDD + número, só dígitos
 INSTAGRAM = "https://www.instagram.com/simonestorti_psicologa/"
 # Link do perfil no Google Meu Negócio. Enquanto vazio, abre uma busca no Google Maps.
 GOOGLE_NEGOCIO = ""
-DOMINIO = ""  # ex.: "https://www.simonestorti.com.br/" (com barra no fim)
+DOMINIO = "https://simonestorti-bice.vercel.app/"  # ex.: "https://www.simonestorti.com.br/" (com barra no fim)
 
 # Nota do passo 1 do "Como funciona". Deixe vazio se não houver.
 NOTA_PRIMEIRA = ""
