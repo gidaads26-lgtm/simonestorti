@@ -13,14 +13,14 @@
 <meta property="og:title" content="{{NOME}} | {{PROFISSAO}}">
 <meta property="og:description" content="{{DESCRICAO}}">
 <meta property="og:url" content="{{URL}}">
-<meta property="og:image" content="{{URL}}og-image.jpg?v=1">
+<meta property="og:image" content="{{URL}}og-image.jpg?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Foto de {{NOME}}, {{PROFISSAO_MIN}} em {{CIDADE}}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{NOME}} | {{PROFISSAO}}">
 <meta name="twitter:description" content="{{DESCRICAO}}">
-<meta name="twitter:image" content="{{URL}}og-image.jpg?v=1">
+<meta name="twitter:image" content="{{URL}}og-image.jpg?v=2">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -221,7 +221,7 @@ p{margin:0}
 .local{background:var(--porcelana)}
 .local-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(1.5rem,3vw,2.5rem);align-items:stretch}
 .local-foto{margin:0}
-.local-foto img{width:100%;height:100%;min-height:24rem;object-fit:cover;border-top-right-radius:38% 30%;border-radius:4px 38% 4px 4px / 4px 30% 4px 4px}
+.local-foto img{width:100%;height:100%;min-height:24rem;object-fit:cover;object-position:65% 40%;border-radius:38% 4px 4px 4px / 30% 4px 4px 4px}
 .local-info{display:flex;flex-direction:column;gap:1rem}
 .local-cta{align-self:flex-start;margin-top:.5rem}
 .bloco{border-radius:4px;padding:2rem 1.9rem;display:flex;gap:1.25rem;align-items:flex-start}
@@ -357,7 +357,7 @@ p{margin:0}
   .hero-fatos li:first-child{border-top:0}
   .hero-acoes{margin-top:1.9rem;gap:.5rem 1.4rem}
   .hero-foto{min-height:0;height:min(56svh,480px);margin:0 var(--gutter) 0 0;border-radius:28px;overflow:hidden;isolation:isolate;box-shadow:0 24px 50px -34px rgba(13,35,82,.55)}
-  .hero-foto img{top:-26%;bottom:auto;height:129%;border-radius:0;object-position:50% 100%;will-change:translate}
+  .hero-foto img{top:-9%;bottom:auto;height:118%;border-radius:0;object-position:50% 30%;will-change:translate}
   .hero-foto::after{content:"";position:absolute;inset:10px;border-radius:20px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.75);pointer-events:none;z-index:1}
   .hero-fatos{margin-top:.75rem}
   .antes-grid,.local-grid,.sobre-grid,.faq-grid{grid-template-columns:minmax(0,1fr)}
@@ -615,7 +615,7 @@ p{margin:0}
       <h1 data-entra style="--i:0">Você já entende o que sente, mas ainda não consegue mudar?</h1>
       <p class="hero-sub" data-entra style="--i:1">Com psicologia, hipnose clínica e regressão, investigo com você onde começaram as reações que hoje se repetem.</p>
       <ul class="hero-fatos" data-entra style="--i:2">
-        <li><span class="circ peq" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 7.5V12l3 2"/></svg></span><span><strong>Mais de 30 anos</strong> de experiência como psicóloga</span></li>
+        <li><span class="circ peq" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 7.5V12l3 2"/></svg></span><span><strong>Mais de 35 anos</strong> de experiência como psicóloga</span></li>
         <li><span class="circ peq" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.4L7.5 21l4.5-2.4 4.5 2.4-1.5-7.6"/></svg></span><span><strong>1º lugar Ouro</strong> no Melhores do Ano 2025</span></li>
       </ul>
       <div class="hero-acoes" data-entra style="--i:3">
@@ -623,7 +623,7 @@ p{margin:0}
       </div>
     </div>
     <figure class="hero-foto">
-      <img src="{{IMG_HERO}}" width="722" height="1000" alt="{{NOME}} sorrindo, segurando os óculos vermelhos" fetchpriority="high">
+      <img src="{{IMG_HERO}}" width="800" height="1000" alt="{{NOME}} sorrindo, sentada à mesa do consultório" fetchpriority="high">
     </figure>
   </div>
 </section>
@@ -740,7 +740,7 @@ p{margin:0}
     </div>
     <div class="local-grid">
       <figure class="local-foto" data-revelar>
-        <img src="{{IMG_CONSULTORIO}}" width="1000" height="750" alt="{{NOME}} sentada ao lado da poltrona de atendimento no consultório" loading="lazy">
+        <img src="{{IMG_CONSULTORIO}}" width="1000" height="750" alt="{{NOME}} ao lado da poltrona de atendimento no consultório" loading="lazy">
       </figure>
       <div class="local-info">
         <div class="bloco bloco-claro" data-revelar style="--i:1">
@@ -778,7 +778,7 @@ p{margin:0}
     </figure>
     <div class="sobre-texto">
       <h2 data-revelar>Sou {{NOME}}</h2>
-      <p data-revelar style="--i:1">Sou psicóloga há mais de 30 anos. Na clínica, uno a psicoterapia à hipnose clínica e à regressão, porque muita gente chega ao consultório já sabendo o que sente e, mesmo assim, presa às mesmas reações.</p>
+      <p data-revelar style="--i:1">Sou psicóloga há mais de 35 anos. Na clínica, uno a psicoterapia à hipnose clínica e à regressão, porque muita gente chega ao consultório já sabendo o que sente e, mesmo assim, presa às mesmas reações.</p>
       <p data-revelar style="--i:2">Também trabalho com desenvolvimento humano e organizacional, levando o cuidado com a saúde emocional para equipes e empresas.</p>
       <p data-revelar style="--i:3">Atendo no Jardim dos Estados, em {{CIDADE}}, e online para quem está em outras cidades.</p>
       <div class="selo" data-revelar style="--i:4">
@@ -873,9 +873,11 @@ p{margin:0}
   }
   /* contagem dos anos de experiência */
   var forte = document.querySelector(".hero-fatos strong");
-  if(forte && /30/.test(forte.textContent) && !reduz){
-    forte.innerHTML = forte.textContent.replace("30", '<span class="conta">0</span>');
-    var alvoN = 30, ini = null, conta = forte.querySelector(".conta");
+  var achaN = forte ? forte.textContent.match(/\d+/) : null;
+  if(forte && achaN && !reduz){
+    var alvoN = parseInt(achaN[0], 10);
+    forte.innerHTML = forte.textContent.replace(achaN[0], '<span class="conta">0</span>');
+    var ini = null, conta = forte.querySelector(".conta");
     setTimeout(function(){
       requestAnimationFrame(function passo(t){
         if(!ini) ini = t;

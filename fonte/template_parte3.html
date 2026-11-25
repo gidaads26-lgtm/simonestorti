@@ -23,9 +23,11 @@
   }
   /* contagem dos anos de experiência */
   var forte = document.querySelector(".hero-fatos strong");
-  if(forte && /30/.test(forte.textContent) && !reduz){
-    forte.innerHTML = forte.textContent.replace("30", '<span class="conta">0</span>');
-    var alvoN = 30, ini = null, conta = forte.querySelector(".conta");
+  var achaN = forte ? forte.textContent.match(/\d+/) : null;
+  if(forte && achaN && !reduz){
+    var alvoN = parseInt(achaN[0], 10);
+    forte.innerHTML = forte.textContent.replace(achaN[0], '<span class="conta">0</span>');
+    var ini = null, conta = forte.querySelector(".conta");
     setTimeout(function(){
       requestAnimationFrame(function passo(t){
         if(!ini) ini = t;

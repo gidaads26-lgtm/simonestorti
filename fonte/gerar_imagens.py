@@ -48,10 +48,9 @@ def og():
     # foto centralizada, atravessando a linha (a miniatura do WhatsApp corta o centro)
     foto = Image.open(AQUI / "fotos" / "hero.jpg").convert("RGB")
     fw, fh = 330, 520
-    # recorte com o rosto no terço superior
-    cx, cy = 375, 540
-    esc = fw / 520
-    box = (cx - 260, cy - 250, cx + 260, cy - 250 + int(fh / esc))
+    # recorte com o rosto no terço superior (ajuste CX, TOPO e LARG se trocar a foto)
+    CX, TOPO, LARG = 500, 150, 640
+    box = (CX - LARG // 2, TOPO, CX + LARG // 2, TOPO + int(LARG * fh / fw))
     foto = foto.crop(box).resize((fw, fh), Image.LANCZOS)
     x0, y0 = (W - fw) // 2, 50
     im.paste(foto, (x0, y0))
